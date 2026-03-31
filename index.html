@@ -4,6 +4,92 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FlowDesk – The Easiest Way to Manage Customer Support Tickets</title>
+
+  <!-- SEO: Primary meta tags -->
+  <meta name="description" content="FlowDesk brings all your customer conversations into one clean workspace. Resolve support tickets 40% faster with smart routing, AI-assisted replies, and real-time analytics." />
+  <meta name="keywords" content="customer support software, help desk, ticket management, support tickets, customer service platform, SaaS support tool" />
+  <meta name="author" content="FlowDesk, Inc." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.flowdesk.io/" />
+
+  <!-- SEO: Open Graph (Facebook, LinkedIn, Slack previews) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.flowdesk.io/" />
+  <meta property="og:title" content="FlowDesk – The Easiest Way to Manage Customer Support Tickets" />
+  <meta property="og:description" content="Resolve support tickets 40% faster. FlowDesk unifies email, chat, and web into one smart inbox for your support team." />
+  <meta property="og:image" content="https://www.flowdesk.io/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="FlowDesk" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- SEO: Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@flowdesk" />
+  <meta name="twitter:title" content="FlowDesk – The Easiest Way to Manage Customer Support Tickets" />
+  <meta name="twitter:description" content="Resolve support tickets 40% faster. Smart routing, AI-assisted replies, and real-time analytics — all in one place." />
+  <meta name="twitter:image" content="https://www.flowdesk.io/og-image.png" />
+
+  <!-- SEO: JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.flowdesk.io/#organization",
+        "name": "FlowDesk",
+        "url": "https://www.flowdesk.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.flowdesk.io/logo.png"
+        },
+        "sameAs": [
+          "https://twitter.com/flowdesk",
+          "https://www.linkedin.com/company/flowdesk"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://www.flowdesk.io/#app",
+        "name": "FlowDesk",
+        "url": "https://www.flowdesk.io/",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "description": "FlowDesk is a customer support ticket management platform that helps teams resolve issues faster with smart routing, AI-assisted replies, and real-time analytics.",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Starter",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "Free plan for up to 3 agents and 500 tickets per month."
+          },
+          {
+            "@type": "Offer",
+            "name": "Pro",
+            "price": "49",
+            "priceCurrency": "USD",
+            "description": "Unlimited agents, tickets, AI replies, and advanced analytics."
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "12000",
+          "bestRating": "5"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.flowdesk.io/#website",
+        "url": "https://www.flowdesk.io/",
+        "name": "FlowDesk",
+        "publisher": { "@id": "https://www.flowdesk.io/#organization" }
+      }
+    ]
+  }
+  </script>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -637,6 +723,7 @@
 <body>
 
   <!-- Nav -->
+  <header>
   <nav>
     <span class="logo">FlowDesk</span>
     <ul class="nav-links">
@@ -648,8 +735,13 @@
     <a href="#" class="nav-cta">Start for free</a>
   </nav>
 
+  </nav>
+  </header>
+
+  <main>
+
   <!-- Hero -->
-  <section class="hero">
+  <section class="hero" aria-label="Hero">
     <div class="badge">Now in public beta</div>
     <h1>Support tickets,<br><span>finally under control.</span></h1>
     <p class="hero-sub">
@@ -758,7 +850,7 @@
   </div>
 
   <!-- Features -->
-  <section class="features" id="features">
+  <section class="features" id="features" aria-label="Features">
     <div class="section-label">Features</div>
     <h2>Everything your support team needs</h2>
     <p class="section-sub">From first reply to final resolution — FlowDesk keeps your team aligned and your customers satisfied.</p>
@@ -819,7 +911,7 @@
   </div>
 
   <!-- Testimonials -->
-  <section class="testimonials" id="testimonials">
+  <section class="testimonials" id="testimonials" aria-label="Testimonials">
     <div class="testimonials-inner">
       <div class="section-label">Testimonials</div>
       <h2>Loved by support teams</h2>
@@ -863,7 +955,7 @@
   </section>
 
   <!-- Pricing -->
-  <section class="pricing" id="pricing">
+  <section class="pricing" id="pricing" aria-label="Pricing">
     <div class="section-label">Pricing</div>
     <h2>Simple, transparent pricing</h2>
     <p class="section-sub" style="margin: .75rem auto 0; text-align:center">Start free, scale as you grow. No hidden fees.</p>
@@ -918,8 +1010,10 @@
     <a href="#" class="btn-white">Start for free — no card needed</a>
   </div>
 
+  </main>
+
   <!-- Footer -->
-  <footer>
+  <footer aria-label="Site footer">
     <div class="footer-grid">
       <div class="footer-brand">
         <span class="logo">FlowDesk</span>
