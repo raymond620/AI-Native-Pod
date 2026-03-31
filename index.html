@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FlowDesk – The Easiest Way to Manage Customer Support Tickets</title>
+
+  <!-- SEO: Primary meta tags -->
+  <meta name="description" content="FlowDesk brings all your customer conversations into one clean workspace. Resolve support tickets 40% faster with smart routing, AI-assisted replies, and real-time analytics." />
+  <meta name="keywords" content="customer support software, help desk, ticket management, support tickets, customer service platform, SaaS support tool" />
+  <meta name="author" content="FlowDesk, Inc." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.flowdesk.io/" />
+
+  <!-- SEO: Open Graph (Facebook, LinkedIn, Slack previews) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.flowdesk.io/" />
+  <meta property="og:title" content="FlowDesk – The Easiest Way to Manage Customer Support Tickets" />
+  <meta property="og:description" content="Resolve support tickets 40% faster. FlowDesk unifies email, chat, and web into one smart inbox for your support team." />
+  <meta property="og:image" content="https://www.flowdesk.io/og-image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="FlowDesk" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- SEO: Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@flowdesk" />
+  <meta name="twitter:title" content="FlowDesk – The Easiest Way to Manage Customer Support Tickets" />
+  <meta name="twitter:description" content="Resolve support tickets 40% faster. Smart routing, AI-assisted replies, and real-time analytics — all in one place." />
+  <meta name="twitter:image" content="https://www.flowdesk.io/og-image.png" />
+
+  <!-- SEO: JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.flowdesk.io/#organization",
+        "name": "FlowDesk",
+        "url": "https://www.flowdesk.io/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://www.flowdesk.io/logo.png"
+        },
+        "sameAs": [
+          "https://twitter.com/flowdesk",
+          "https://www.linkedin.com/company/flowdesk"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://www.flowdesk.io/#app",
+        "name": "FlowDesk",
+        "url": "https://www.flowdesk.io/",
+        "applicationCategory": "BusinessApplication",
+        "operatingSystem": "Web",
+        "description": "FlowDesk is a customer support ticket management platform that helps teams resolve issues faster with smart routing, AI-assisted replies, and real-time analytics.",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Starter",
+            "price": "0",
+            "priceCurrency": "USD",
+            "description": "Free plan for up to 3 agents and 500 tickets per month."
+          },
+          {
+            "@type": "Offer",
+            "name": "Pro",
+            "price": "49",
+            "priceCurrency": "USD",
+            "description": "Unlimited agents, tickets, AI replies, and advanced analytics."
+          }
+        ],
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "12000",
+          "bestRating": "5"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.flowdesk.io/#website",
+        "url": "https://www.flowdesk.io/",
+        "name": "FlowDesk",
+        "publisher": { "@id": "https://www.flowdesk.io/#organization" }
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand: #4F6EF7;
+      --brand-dark: #3A56D4;
+      --brand-light: #EEF1FE;
+      --text: #111827;
+      --muted: #6B7280;
+      --border: #E5E7EB;
+      --bg: #FFFFFF;
+      --section-bg: #F9FAFB;
+      --radius: 12px;
+      --shadow: 0 1px 3px rgba(0,0,0,.08), 0 4px 16px rgba(0,0,0,.06);
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.6;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(255,255,255,.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border);
+      padding: 0 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--brand);
+      letter-spacing: -0.5px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+      font-size: .9rem;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover { color: var(--text); }
+
+    .nav-cta {
+      background: var(--brand);
+      color: #fff;
+      padding: .5rem 1.25rem;
+      border-radius: 8px;
+      font-size: .9rem;
+      font-weight: 600;
+      transition: background .2s;
+    }
+
+    .nav-cta:hover { background: var(--brand-dark); }
+
+    /* ── Hero ── */
+    .hero {
+      text-align: center;
+      padding: 6rem 5% 5rem;
+      max-width: 780px;
+      margin: 0 auto;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      background: var(--brand-light);
+      color: var(--brand);
+      font-size: .8rem;
+      font-weight: 600;
+      padding: .3rem .85rem;
+      border-radius: 999px;
+      margin-bottom: 1.5rem;
+      letter-spacing: .02em;
+    }
+
+    .badge::before { content: '✦'; font-size: .7rem; }
+
+    h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -1.5px;
+      color: var(--text);
+      margin-bottom: 1.25rem;
+    }
+
+    h1 span { color: var(--brand); }
+
+    .hero-sub {
+      font-size: 1.15rem;
+      color: var(--muted);
+      max-width: 540px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .cta-group {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--brand);
+      color: #fff;
+      padding: .85rem 2rem;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 700;
+      box-shadow: 0 4px 14px rgba(79,110,247,.35);
+      transition: background .2s, transform .15s;
+    }
+
+    .btn-primary:hover { background: var(--brand-dark); transform: translateY(-1px); }
+
+    .btn-secondary {
+      background: transparent;
+      color: var(--text);
+      padding: .85rem 2rem;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      border: 1.5px solid var(--border);
+      transition: border-color .2s;
+    }
+
+    .btn-secondary:hover { border-color: var(--brand); color: var(--brand); }
+
+    .hero-note {
+      margin-top: 1.25rem;
+      font-size: .82rem;
+      color: var(--muted);
+    }
+
+    /* ── Dashboard Preview ── */
+    .preview-wrapper {
+      padding: 0 5% 5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .dashboard {
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .dash-bar {
+      background: #F3F4F6;
+      padding: .6rem 1rem;
+      display: flex;
+      gap: .4rem;
+      align-items: center;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .dot { width: 10px; height: 10px; border-radius: 50%; }
+    .dot-r { background: #FC6058; }
+    .dot-y { background: #FEC02F; }
+    .dot-g { background: #2BC840; }
+
+    .dash-body {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      min-height: 340px;
+    }
+
+    .dash-sidebar {
+      background: #FAFAFA;
+      border-right: 1px solid var(--border);
+      padding: 1.25rem 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: .3rem;
+    }
+
+    .sidebar-label {
+      font-size: .7rem;
+      font-weight: 700;
+      color: var(--muted);
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin: .75rem 0 .35rem;
+    }
+
+    .sidebar-item {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .5rem .75rem;
+      border-radius: 8px;
+      font-size: .85rem;
+      color: var(--muted);
+      cursor: default;
+    }
+
+    .sidebar-item.active {
+      background: var(--brand-light);
+      color: var(--brand);
+      font-weight: 600;
+    }
+
+    .sidebar-item .icon { font-size: 1rem; }
+
+    .count {
+      margin-left: auto;
+      background: var(--brand);
+      color: #fff;
+      font-size: .7rem;
+      font-weight: 700;
+      padding: .1rem .45rem;
+      border-radius: 999px;
+    }
+
+    .dash-main { padding: 1.5rem; }
+
+    .dash-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+
+    .dash-title { font-weight: 700; font-size: 1rem; }
+
+    .dash-actions { display: flex; gap: .5rem; }
+
+    .pill {
+      font-size: .75rem;
+      padding: .3rem .75rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      color: var(--muted);
+      cursor: default;
+    }
+
+    .pill.active { background: var(--brand); color: #fff; border-color: var(--brand); }
+
+    .ticket-list { display: flex; flex-direction: column; gap: .6rem; }
+
+    .ticket {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: .75rem 1rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: .83rem;
+      cursor: default;
+      transition: box-shadow .15s;
+    }
+
+    .ticket:hover { box-shadow: var(--shadow); }
+
+    .ticket-id { color: var(--muted); font-size: .75rem; min-width: 44px; }
+
+    .ticket-tag {
+      font-size: .7rem;
+      font-weight: 700;
+      padding: .2rem .6rem;
+      border-radius: 999px;
+      white-space: nowrap;
+    }
+
+    .tag-open { background: #DCFCE7; color: #166534; }
+    .tag-pending { background: #FEF9C3; color: #854D0E; }
+    .tag-closed { background: #F3F4F6; color: var(--muted); }
+
+    .ticket-title { flex: 1; font-weight: 500; }
+
+    .ticket-meta { color: var(--muted); font-size: .75rem; white-space: nowrap; }
+
+    .avatar {
+      width: 26px; height: 26px; border-radius: 50%;
+      background: var(--brand-light);
+      color: var(--brand);
+      font-size: .7rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ── Logos ── */
+    .logos-section {
+      background: var(--section-bg);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 2.5rem 5%;
+      text-align: center;
+    }
+
+    .logos-label {
+      font-size: .8rem;
+      font-weight: 600;
+      color: var(--muted);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+
+    .logo-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+      flex-wrap: wrap;
+    }
+
+    .logo-item {
+      font-size: 1rem;
+      font-weight: 800;
+      color: #C9CDD4;
+      letter-spacing: -.5px;
+    }
+
+    /* ── Features ── */
+    .features {
+      padding: 6rem 5%;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .section-label {
+      font-size: .8rem;
+      font-weight: 700;
+      color: var(--brand);
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      margin-bottom: .75rem;
+    }
+
+    h2 {
+      font-size: clamp(1.6rem, 3.5vw, 2.4rem);
+      font-weight: 800;
+      letter-spacing: -1px;
+      margin-bottom: 1rem;
+    }
+
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--muted);
+      max-width: 520px;
+      margin-bottom: 3.5rem;
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .feature-card {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      transition: box-shadow .2s;
+    }
+
+    .feature-card:hover { box-shadow: var(--shadow); }
+
+    .feature-icon {
+      width: 44px; height: 44px;
+      background: var(--brand-light);
+      color: var(--brand);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .feature-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: .5rem; }
+    .feature-card p { font-size: .9rem; color: var(--muted); }
+
+    /* ── Stats ── */
+    .stats {
+      background: var(--brand);
+      padding: 4rem 5%;
+      text-align: center;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .stat-num {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: #fff;
+      letter-spacing: -1px;
+    }
+
+    .stat-label { font-size: .9rem; color: rgba(255,255,255,.7); margin-top: .25rem; }
+
+    /* ── Testimonials ── */
+    .testimonials {
+      padding: 6rem 5%;
+      background: var(--section-bg);
+    }
+
+    .testimonials-inner { max-width: 1100px; margin: 0 auto; }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .testi-card {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+    }
+
+    .stars { color: #F59E0B; font-size: 1rem; margin-bottom: 1rem; }
+
+    .testi-text { font-size: .95rem; color: var(--text); margin-bottom: 1.25rem; line-height: 1.7; }
+
+    .testi-author { display: flex; align-items: center; gap: .75rem; }
+
+    .testi-avatar {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: var(--brand-light);
+      color: var(--brand);
+      font-size: .85rem;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .testi-name { font-weight: 700; font-size: .88rem; }
+    .testi-role { font-size: .78rem; color: var(--muted); }
+
+    /* ── Pricing ── */
+    .pricing {
+      padding: 6rem 5%;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 3rem;
+      text-align: left;
+    }
+
+    .plan {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 2rem;
+      position: relative;
+    }
+
+    .plan.popular {
+      border-color: var(--brand);
+      box-shadow: 0 0 0 3px var(--brand-light);
+    }
+
+    .popular-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--brand);
+      color: #fff;
+      font-size: .72rem;
+      font-weight: 700;
+      padding: .25rem .75rem;
+      border-radius: 999px;
+      letter-spacing: .04em;
+      white-space: nowrap;
+    }
+
+    .plan-name { font-weight: 700; font-size: 1rem; margin-bottom: .5rem; }
+
+    .plan-price {
+      font-size: 2.25rem;
+      font-weight: 800;
+      letter-spacing: -1px;
+      color: var(--text);
+    }
+
+    .plan-price span { font-size: 1rem; font-weight: 500; color: var(--muted); }
+
+    .plan-desc { font-size: .85rem; color: var(--muted); margin: .5rem 0 1.5rem; }
+
+    .plan-features { list-style: none; display: flex; flex-direction: column; gap: .6rem; margin-bottom: 1.75rem; }
+
+    .plan-features li {
+      font-size: .88rem;
+      color: var(--text);
+      display: flex;
+      gap: .6rem;
+      align-items: flex-start;
+    }
+
+    .plan-features li::before { content: '✓'; color: var(--brand); font-weight: 700; flex-shrink: 0; }
+
+    .btn-plan {
+      display: block;
+      text-align: center;
+      padding: .75rem;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: .9rem;
+      border: 1.5px solid var(--border);
+      color: var(--text);
+      transition: all .2s;
+    }
+
+    .btn-plan:hover { border-color: var(--brand); color: var(--brand); }
+
+    .plan.popular .btn-plan {
+      background: var(--brand);
+      color: #fff;
+      border-color: var(--brand);
+    }
+
+    .plan.popular .btn-plan:hover { background: var(--brand-dark); }
+
+    /* ── CTA Banner ── */
+    .cta-banner {
+      background: var(--brand);
+      border-radius: var(--radius);
+      padding: 4rem 3rem;
+      text-align: center;
+      margin: 0 5% 6rem;
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-banner h2 { color: #fff; margin-bottom: .75rem; }
+    .cta-banner p { color: rgba(255,255,255,.8); margin-bottom: 2rem; font-size: 1.05rem; }
+
+    .btn-white {
+      background: #fff;
+      color: var(--brand);
+      padding: .85rem 2rem;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 700;
+      display: inline-block;
+      transition: transform .15s;
+    }
+
+    .btn-white:hover { transform: translateY(-1px); }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--section-bg);
+      border-top: 1px solid var(--border);
+      padding: 3rem 5% 2rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr repeat(3, 1fr);
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .footer-brand .logo { display: block; margin-bottom: .75rem; }
+    .footer-brand p { font-size: .88rem; color: var(--muted); max-width: 240px; }
+
+    .footer-col h4 { font-size: .82rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: var(--muted); margin-bottom: 1rem; }
+
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: .5rem; }
+
+    .footer-col ul li a { font-size: .88rem; color: var(--muted); }
+    .footer-col ul li a:hover { color: var(--text); }
+
+    .footer-bottom {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: .8rem;
+      color: var(--muted);
+      flex-wrap: wrap;
+      gap: .5rem;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 720px) {
+      .nav-links { display: none; }
+      .dash-body { grid-template-columns: 1fr; }
+      .dash-sidebar { display: none; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .footer-grid { grid-template-columns: 1fr; }
+      .cta-banner { padding: 3rem 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <header>
+  <nav>
+    <span class="logo">FlowDesk</span>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#testimonials">Customers</a></li>
+      <li><a href="#">Docs</a></li>
+    </ul>
+    <a href="#" class="nav-cta">Start for free</a>
+  </nav>
+
+  </nav>
+  </header>
+
+  <main>
+
+  <!-- Hero -->
+  <section class="hero" aria-label="Hero">
+    <div class="badge">Now in public beta</div>
+    <h1>Support tickets,<br><span>finally under control.</span></h1>
+    <p class="hero-sub">
+      FlowDesk is a <strong>customer support software</strong> that brings all your conversations into one clean <strong>help desk</strong> workspace — so your team resolves <strong>support tickets</strong> faster and customers leave happier.
+    </p>
+    <div class="cta-group">
+      <a href="#" class="btn-primary">Get started free</a>
+      <a href="#" class="btn-secondary">See a demo →</a>
+    </div>
+    <p class="hero-note">No credit card required · 14-day free trial · Cancel anytime</p>
+  </section>
+
+  <!-- Dashboard Preview -->
+  <div class="preview-wrapper">
+    <div class="dashboard">
+      <div class="dash-bar">
+        <div class="dot dot-r"></div>
+        <div class="dot dot-y"></div>
+        <div class="dot dot-g"></div>
+      </div>
+      <div class="dash-body">
+        <div class="dash-sidebar">
+          <span class="sidebar-label">Inbox</span>
+          <div class="sidebar-item active">
+            <span class="icon">📥</span> All Tickets
+            <span class="count">14</span>
+          </div>
+          <div class="sidebar-item">
+            <span class="icon">⏳</span> Pending
+          </div>
+          <div class="sidebar-item">
+            <span class="icon">✅</span> Resolved
+          </div>
+          <span class="sidebar-label">Teams</span>
+          <div class="sidebar-item">
+            <span class="icon">💬</span> Support
+          </div>
+          <div class="sidebar-item">
+            <span class="icon">🔧</span> Engineering
+          </div>
+          <div class="sidebar-item">
+            <span class="icon">💳</span> Billing
+          </div>
+        </div>
+        <div class="dash-main">
+          <div class="dash-header">
+            <span class="dash-title">All Tickets</span>
+            <div class="dash-actions">
+              <span class="pill active">All</span>
+              <span class="pill">Open</span>
+              <span class="pill">Pending</span>
+            </div>
+          </div>
+          <div class="ticket-list">
+            <div class="ticket">
+              <span class="ticket-id">#1042</span>
+              <span class="ticket-tag tag-open">Open</span>
+              <span class="ticket-title">Cannot export invoice as PDF</span>
+              <div class="avatar">JL</div>
+              <span class="ticket-meta">2 min ago</span>
+            </div>
+            <div class="ticket">
+              <span class="ticket-id">#1041</span>
+              <span class="ticket-tag tag-pending">Pending</span>
+              <span class="ticket-title">Two-factor auth not sending SMS code</span>
+              <div class="avatar">SM</div>
+              <span class="ticket-meta">18 min ago</span>
+            </div>
+            <div class="ticket">
+              <span class="ticket-id">#1040</span>
+              <span class="ticket-tag tag-open">Open</span>
+              <span class="ticket-title">Dashboard loading slowly on mobile</span>
+              <div class="avatar">AR</div>
+              <span class="ticket-meta">1 hr ago</span>
+            </div>
+            <div class="ticket">
+              <span class="ticket-id">#1039</span>
+              <span class="ticket-tag tag-closed">Closed</span>
+              <span class="ticket-title">Billing cycle question for annual plan</span>
+              <div class="avatar">KP</div>
+              <span class="ticket-meta">3 hr ago</span>
+            </div>
+            <div class="ticket">
+              <span class="ticket-id">#1038</span>
+              <span class="ticket-tag tag-open">Open</span>
+              <span class="ticket-title">Feature request: bulk ticket assignment</span>
+              <div class="avatar">TN</div>
+              <span class="ticket-meta">Yesterday</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Logos -->
+  <div class="logos-section">
+    <p class="logos-label">Trusted by teams at</p>
+    <div class="logo-row">
+      <span class="logo-item">Meridian</span>
+      <span class="logo-item">Stackly</span>
+      <span class="logo-item">Novara</span>
+      <span class="logo-item">Vantio</span>
+      <span class="logo-item">Crestwave</span>
+    </div>
+  </div>
+
+  <!-- Features -->
+  <section class="features" id="features" aria-label="Features">
+    <div class="section-label">Features</div>
+    <h2>Everything your support team needs</h2>
+    <p class="section-sub">From first reply to final resolution — FlowDesk's <strong>help desk ticketing system</strong> keeps your <strong>customer service team</strong> aligned and your customers satisfied.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="feature-icon">📬</div>
+        <h3>Unified Inbox</h3>
+        <p>Pull <strong>support tickets</strong> from email, chat, and web forms into a single, prioritized <strong>omnichannel inbox</strong>. No more tab-switching.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">⚡</div>
+        <h3>Smart Routing</h3>
+        <p>Automatically assign <strong>support tickets</strong> to the right agent or team based on topic, skill, or workload — cutting <strong>ticket resolution time</strong> dramatically.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🤖</div>
+        <h3>AI-Assisted Replies</h3>
+        <p><strong>Customer support automation</strong> suggests responses trained on your <strong>knowledge base</strong> to help agents reply in seconds, not minutes.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <h3>Real-Time Analytics</h3>
+        <p>Track <strong>response times</strong>, <strong>CSAT scores</strong>, and agent performance with <strong>help desk analytics</strong> dashboards updated in real time.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🔗</div>
+        <h3>Integrations</h3>
+        <p>Connect your <strong>customer service platform</strong> with Slack, Jira, Stripe, Salesforce, and 50+ tools your team already uses.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">🛡️</div>
+        <h3>Enterprise Security</h3>
+        <p><strong>SOC 2 Type II</strong> certified <strong>help desk software</strong> with SSO, audit logs, and granular role-based permissions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <div class="stats">
+    <div class="stats-grid">
+      <div>
+        <div class="stat-num">40%</div>
+        <div class="stat-label">Faster resolution time</div>
+      </div>
+      <div>
+        <div class="stat-num">12k+</div>
+        <div class="stat-label">Teams onboarded</div>
+      </div>
+      <div>
+        <div class="stat-num">98.9%</div>
+        <div class="stat-label">Uptime SLA</div>
+      </div>
+      <div>
+        <div class="stat-num">4.9 ★</div>
+        <div class="stat-label">Average rating</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Testimonials -->
+  <section class="testimonials" id="testimonials" aria-label="Testimonials">
+    <div class="testimonials-inner">
+      <div class="section-label">Testimonials</div>
+      <h2>Loved by support teams</h2>
+      <p class="section-sub" style="margin-bottom:3rem">See why thousands of companies chose FlowDesk as their <strong>help desk software</strong> to power their <strong>customer support operations</strong>.</p>
+      <div class="testimonials-grid">
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"We cut our average <strong>ticket response time</strong> from 6 hours to under 45 minutes in the first week. The <strong>AI-assisted replies</strong> alone are worth it."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">SL</div>
+            <div>
+              <div class="testi-name">Sarah Lin</div>
+              <div class="testi-role">Head of Support, Meridian</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"Finally a <strong>customer support tool</strong> that doesn't feel like it was designed in 2010. The UI is clean, fast, and our <strong>support agents</strong> actually enjoy using it."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">MK</div>
+            <div>
+              <div class="testi-name">Marcus K.</div>
+              <div class="testi-role">CTO, Stackly</div>
+            </div>
+          </div>
+        </div>
+        <div class="testi-card">
+          <div class="stars">★★★★★</div>
+          <p class="testi-text">"<strong>Smart ticket routing</strong> changed the game for us. <strong>Support tickets</strong> get to the right person instantly and nothing falls through the cracks anymore."</p>
+          <div class="testi-author">
+            <div class="testi-avatar">DP</div>
+            <div>
+              <div class="testi-name">Diana P.</div>
+              <div class="testi-role">Support Manager, Novara</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section class="pricing" id="pricing" aria-label="Pricing">
+    <div class="section-label">Pricing</div>
+    <h2>Simple, transparent pricing</h2>
+    <p class="section-sub" style="margin: .75rem auto 0; text-align:center">Start free, scale as you grow. No hidden fees.</p>
+    <div class="pricing-grid">
+      <div class="plan">
+        <div class="plan-name">Starter</div>
+        <div class="plan-price">$0 <span>/ month</span></div>
+        <div class="plan-desc">For individuals and small teams just getting started with <strong>customer support ticketing</strong>.</div>
+        <ul class="plan-features">
+          <li>Up to 3 agents</li>
+          <li>500 tickets / month</li>
+          <li>Email support channel</li>
+          <li>Basic analytics</li>
+        </ul>
+        <a href="#" class="btn-plan">Get started free</a>
+      </div>
+      <div class="plan popular">
+        <div class="popular-badge">Most Popular</div>
+        <div class="plan-name">Pro</div>
+        <div class="plan-price">$49 <span>/ month</span></div>
+        <div class="plan-desc">For growing teams that need more <strong>help desk automation</strong> and flexibility.</div>
+        <ul class="plan-features">
+          <li>Unlimited agents</li>
+          <li>Unlimited tickets</li>
+          <li>All channels (email, chat, web)</li>
+          <li>AI-assisted replies</li>
+          <li>Smart routing</li>
+          <li>Advanced analytics</li>
+        </ul>
+        <a href="#" class="btn-plan">Start 14-day trial</a>
+      </div>
+      <div class="plan">
+        <div class="plan-name">Enterprise</div>
+        <div class="plan-price">Custom</div>
+        <div class="plan-desc">For large orgs with <strong>SLA management</strong>, compliance, and security requirements.</div>
+        <ul class="plan-features">
+          <li>Everything in Pro</li>
+          <li>SSO & SAML</li>
+          <li>SOC 2 compliance</li>
+          <li>Dedicated account manager</li>
+          <li>SLA guarantee</li>
+        </ul>
+        <a href="#" class="btn-plan">Contact sales</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Banner -->
+  <div class="cta-banner">
+    <h2>Ready to transform your support?</h2>
+    <p>Join 12,000+ teams using FlowDesk's <strong>customer support software</strong> to deliver faster, friendlier <strong>customer service</strong> at scale.</p>
+    <a href="#" class="btn-white">Start for free — no card needed</a>
+  </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer aria-label="Site footer">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <span class="logo">FlowDesk</span>
+        <p>The easiest <strong>help desk ticketing software</strong> to manage <strong>customer support tickets</strong>. Built for modern <strong>customer service teams</strong>.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Changelog</a></li>
+          <li><a href="#">Roadmap</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Docs</a></li>
+          <li><a href="#">Status</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 FlowDesk, Inc. All rights reserved.</span>
+      <span>Terms · Privacy · Cookies</span>
+    </div>
+  </footer>
+
+</body>
+</html>
